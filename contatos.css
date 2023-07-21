@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Star&Love';
+    src: url('Fontes/Stars&Love-BottomHeavy.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --fontLogo: 'Star&Love';
+    --corLogo: #961212;
+    --corBege: #F8C666;
+}
+
+body {
+    margin: 0px;
+    background-color:var(--corLogo);
+    background: var(--corLogo) url(Imagens/Pizza.png) repeat;
+    background-size: 275px;
+}
+
+#logo {
+    height: 100px;
+    margin: 0px;
+    position: absolute;
+}
+
+header {
+    height: 100px;
+    background-color: var(--corLogo);
+    padding: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.582);
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 35px 30px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 58px 20px;
+    transition-duration: 0.3s;
+}
+
+main {
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+main > h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--corLogo);
+    text-align: center;
+    font-size: 30px;
+}
+
+main > h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--corLogo);
+    font-size: 25px;
+}
+
+p#contatos {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+p#contatos::before {
+    content: "\1F4DE";
+}
+
+p#localizaçao {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+strong {
+    color: var(--corLogo);
+}
+
+aside {
+    height: 400px;
+    background-position: center center;
+    background-image: url(Imagens/PIZZARIA\ PETROVA.png);
+    background-size: cover;
+    border-radius: 40px;
+    
+}
+
+.rodape {
+    background-color: var(--corLogo);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+}
